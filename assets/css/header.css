@@ -1,0 +1,9 @@
+.header{
+    calc(100% - 304px);
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min 0px){
+
+}

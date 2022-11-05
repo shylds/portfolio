@@ -1,0 +1,10 @@
+.footer{
+    
+    //width: 100vw;
+    background-color: #FFFFFF;
+}
+.footer__text{  
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+}

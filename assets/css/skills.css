@@ -1,0 +1,44 @@
+.skills__title{
+    text-align: center;
+}
+.skills__grid{
+    width: 100%;
+    height: 580px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.skills__box{
+    background-color: #FFFFFF;
+    margin: 0.1rem;
+}
+.skills__skill{
+    margin: 120px 0 0 15px;
+
+}
+.skills__text{
+    margin: 8px 0 0 15px;
+    font-weight: 700;
+}
+
+.fa-brands{
+    font-size:36px;
+    color: #000000;
+}
+
+@media screen and (min-width : 768px ){
+    
+    .container{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .skills{
+        height: 250px;
+    }
+
+    .skills__grid{
+        height: 130px;
+        grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66% ;
+    }
+    
+}

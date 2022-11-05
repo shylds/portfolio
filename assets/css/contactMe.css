@@ -1,0 +1,11 @@
+.contactMe__fields{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactMe__button{
+    background-color:  #2A7AE4;
+    border-color: #2A7AE4;
+    color: #FFFFFF;
+    height: 40px;
+}

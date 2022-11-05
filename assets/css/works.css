@@ -1,0 +1,26 @@
+.works__title{
+    text-align: center;
+}
+.works__text{
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+
+}
+.works__img{
+    width: 370px;
+}
+.works__subtitle{
+    width: 300px;
+}
+.works__buttons{
+    background-color: #F5F5F5;
+    color: #2A7AE4;
+    border-color: #2A7AE4;
+    width: 130px;
+    height: 40px;
+}
+.works__buttons:last-child{
+    background-color:  #2A7AE4;
+    color: #FFFFFF;
+}
