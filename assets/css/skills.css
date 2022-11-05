@@ -1,15 +1,14 @@
-.skills__title{
-    text-align: center;
-}
 .skills__grid{
     width: 100%;
-    height: 580px;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 .skills__box{
     background-color: #FFFFFF;
-    margin: 0.1rem;
+    margin-bottom: 32px;
+}
+.skills__box:nth-child(2n+1){
+    margin-right: 16px;
 }
 .skills__skill{
     margin: 120px 0 0 15px;

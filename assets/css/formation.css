@@ -7,7 +7,9 @@
     align-items: center;
 }
 .formation__image{
-    width: 25%;
+    background-color: #FFFFFF;
+    width: 290px;
+    height: 118px;
     padding: 1rem;
     
 }
