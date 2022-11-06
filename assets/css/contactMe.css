@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .contactMe__input {
     width: calc(100% - 32px);
@@ -23,9 +24,17 @@
 
 @media screen and (min-width: 1024px ) {
     .contactMe__fields{
+        width: 98%;
         align-items: flex-start;
+        background: url("../img/contato.png");
+        background-repeat: no-repeat;
+        background-size: 300px 475px ;  
+        background-position: right top;
     }
     .contactMe__input, .contactMe__text {
-        width: 656px;
+        width: 550px;
+    }
+    .contactMe__button, .contactMe__input, .contactMe__text {
+        margin-left: 10px;
     }    
 }

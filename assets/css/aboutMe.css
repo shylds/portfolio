@@ -31,9 +31,11 @@
     text-decoration: none;
 }
 .aboutMe__text{
-    //width: calc( 100% - 16px );
-    //padding: 0 16px;
-    width: 99%;
+    width: 100%;
+}
+
+.aboutMe__text h2, .aboutMe__text p{
+    padding: 0 16px;
 }
 
 @media screen and (min-width: 768px){
@@ -57,9 +59,8 @@
     .aboutMe__list{ 
         width: 380px;
     }
-    .aboutMe__text{
-        //width: calc( 100% - 34px );
-        //padding: 0 34px;
+    .aboutMe__text h2, .aboutMe__text p{
+        padding: 0 34px;
     }
 }
 
