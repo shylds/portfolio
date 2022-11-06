@@ -4,15 +4,28 @@
     align-items: center;
 }
 .contactMe__input {
+    width: calc(100% - 32px);
+    height: 56px;
     margin-bottom: 32px;
 }
 .contactMe__text{
+    width: calc(100% - 32px);
     margin-bottom: 32px;
 }
 .contactMe__button{
+    //margin-left: 16px;
     background-color:  #2A7AE4;
     border-color: #2A7AE4;
     color: #FFFFFF;
     height: 40px;
     margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px ) {
+    .contactMe__fields{
+        align-items: flex-start;
+    }
+    .contactMe__input, .contactMe__text {
+        width: 656px;
+    }    
 }

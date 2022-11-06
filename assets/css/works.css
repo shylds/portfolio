@@ -8,7 +8,7 @@
 
 }
 .works__img{
-    width: 350px;
+    width: 100%;
 }
 .works__subtitle{
     width: 300px;
@@ -24,4 +24,19 @@
 .works__buttons:last-child{
     background-color:  #2A7AE4;
     color: #FFFFFF;
+}
+
+@media screen and ( min-width : 768px ) {
+    .works__img{
+        width: 100%;
+    }
+    .works__subtitle{
+        font-size: 1.3rem;
+        weight: 500;
+    }
+    .works__buttons{
+        width: 130px;
+        height: 40px;
+        
+    }
 }

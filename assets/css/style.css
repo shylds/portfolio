@@ -1,13 +1,19 @@
 body{
     font-family: Raleway, sans-serif;
     background-color: #e5e5e5;
+    
 }
-.conteudo{
+
+section:nth-child(1n+2){
     padding : 0 16px;
 }
 
 @media screen and (min-width: 768px){
-    //.conteudo{
-        //padding: 0 152px ;
-    //}
+    section:nth-child(1n+2){
+        padding : 0 34px;
+    }
+}
+
+@media screen and (min-width: 1024){
+
 }
