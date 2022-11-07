@@ -14,6 +14,7 @@
     <link href="./assets/css/normalize.css" rel="stylesheet" >
     <link href="./assets/css/reset.css" rel="stylesheet" >
     <link href="./assets/css/style.css" rel="stylesheet" >
+    <link href="./assets/css/grid.css" rel="stylesheet" >
     <link href="./assets/css/skills.css" rel="stylesheet" >
     <link href="./assets/css/hobbies.css" rel="stylesheet" >
     <link href="./assets/css/header.css " rel="stylesheet">
@@ -33,30 +34,28 @@
         <img id="imagem" class="header__logo" src="" alt="">
         <nav class="menu">
             <ul id="lista__ul" class="menu__list">
-                <li class="menu__item">Sobre mim</li>
-                <li class="menu__item">Skills</li>
-                <li class="menu__item">Hobbies</li>
-                <li class="menu__item">Formação</li>
-                <li class="menu__item">Projetos</li>
-                <li class="menu__item">Projetos</li>
-                <li class="menu__item">contato@fulano.com</li>
+                <li class="menu__item"><a href="#aboutMe">Sobre mim</a></li>
+                <li class="menu__item"><a href="#skills">skills e Hobbies</a></li>
+                <li class="menu__item"><a href="#formation">Formação</a> </li>
+                <li class="menu__item"><a href="#works">Projetos</a> </li>
+                <li class="menu__item"><a href="#contactMe">Contato</a></li>
+                <li class="menu__item">elison.s.ferreira@gmail.com</li>
             </ul>
         </nav>
     </header>
     <main>
         
-        <section class="aboutMe">
+        <section class="aboutMe" id="aboutMe">
             <div class="aboutMe__introduction">
-                <img class="aboutMe__image" src="./assets/img/elison.png" alt="">
+                <img class="aboutMe__image" src="./assets/img/perfil.png" alt="">
                 <div class="aboutMe__me">
                     <h1 class="aboutMe__title">Olá, Me chamo Elison Santos e Construo paginas na web</h1>
                     <p class="aboutMe__subtitle">Eu sou formado em Análise e Desenvolvimento de Sistemas e atualmente estou participando no projeto Oracle ONE na Alura.</p>
                     
                     <ul class="aboutMe__list">
-                        <li class="aboutMe__list-item"><a href="#">Github<img src="./assets/img/icon-redes-sociais.png"></a></li>
-                        <li class="aboutMe__list-item"><a href="#">Linkedin<img src="./assets/img/icon-redes-sociais.png"></a></li>
-                        <li class="aboutMe__list-item"><a href="#">Instagram<img src="./assets/img/icon-redes-sociais.png"></a></li>
-                        <li class="aboutMe__list-item"><a href="#">Curriculo<img src="./assets/img/icon-redes-sociais.png"></a></li>
+                        <li class="aboutMe__list-item"><a href="https://github.com/shylds"><i class="fa-brands fa-github"></i></a></li>
+                        <li class="aboutMe__list-item"><a href="https://www.linkedin.com/in/elison-santos-desenvolvedor/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li class="aboutMe__list-item"><a href="https://www.instagram.com/shylds/"><i class="fa-brands fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -70,68 +69,68 @@
                     
             </div>
         </section>
-        <section class="skills container ">
-            <h2 class="skills__title titles">Skills</h2>
-            <div class="skills__grid ">
-                <div class="skills__box">
-                    <p class="skills__skill fa-brands fa-html5"></p>
-                    <p class="skills__text">HTML5</p>
+        <section class="skills container " id="skills">
+            <h2 class="grid__title titles">Skills</h2>
+            <div class="grid__grid ">
+                <div class="grid__box">
+                    <p class="grid__skill fa-brands fa-html5"></p>
+                    <p class="grid__text">HTML5</p>
                 </div>
-                <div class="skills__box">
-                    <p class="skills__skill fa-brands fa-css3-alt"></p>
-                    <p class="skills__text">CSS3</p>
+                <div class="grid__box">
+                    <p class="grid__skill fa-brands fa-css3-alt"></p>
+                    <p class="grid__text">CSS3</p>
                 </div>
-                <div class="skills__box">
-                    <p class="skills__skill fa-brands fa-js"></p>
-                    <p class="skills__text">JAVASCRIPT</p>
+                <div class="grid__box">
+                    <p class="grid__skill fa-brands fa-js"></p>
+                    <p class="grid__text">JAVASCRIPT</p>
                 </div>
-                <div class="skills__box">
-                    <p class="skills__skill fa-brands fa-php"></p>
-                    <p class="skills__text">PHP</p>
+                <div class="grid__box">
+                    <p class="grid__skill fa-brands fa-php"></p>
+                    <p class="grid__text">PHP</p>
                 </div>
-                <div class="skills__box">
-                    <p class="skills__skill fa-brands fa-java"></p>
-                    <p class="skills__text">JAVA</p>
+                <div class="grid__box">
+                    <p class="grid__skill fa-brands fa-java"></p>
+                    <p class="grid__text">JAVA</p>
                 </div>
-                <div class="skills__box">
-                    <p class="skills__skill fa-brands fa-github"></p>
-                    <p class="skills__text">GITHUB</p>
+                <div class="grid__box">
+                    <p class="grid__skill fa-brands fa-github"></p>
+                    <p class="grid__text">GITHUB</p>
                 </div>
             </div>
         </section>
 
-        <section class="hobbies container ">
-            <h2 class="skills__title titles">Hobbies</h2>
-            <div class="skills__grid ">
-                <div class="skills__box">
-                    <p class="skills__skill fa-solid fa-person-biking"></p>
-                    <p class="skills__text">Andar de bike</p>
+        <section class="hobbies container " id="hobbies">
+            <h2 class="grid__title titles">Hobbies</h2>
+            <div class="grid__grid ">
+                <div class="grid__box">
+                    <p class="grid__skill fa-solid fa-person-biking"></p>
+                    <p class="grid__text">Andar de bike</p>
                 </div>
-                <div class="skills__box">
-                    <p class="skills__skill fa-solid fa-headphones"></p>
-                    <p class="skills__text">Escutar musica</p>
+                <div class="grid__box">
+                    <p class="grid__skill fa-solid fa-headphones"></p>
+                    <p class="grid__text">Escutar musica</p>
                 </div>
-                <div class="skills__box">
-                    <p class="skills__skill fa-solid fa-tv"></p>
-                    <p class="skills__text">Assistir filmes e series</p>
+                <div class="grid__box">
+                    <p class="grid__skill fa-solid fa-tv"></p>
+                    <p class="grid__text">Assistir filmes e series</p>
                 </div>
-                <div class="skills__box">
-                    <p class="skills__skill fa-solid fa-gamepad"></p>
-                    <p class="skills__text">Jogar video game</p>
+                <div class="grid__box">
+                    <p class="grid__skill fa-solid fa-gamepad"></p>
+                    <p class="grid__text">Jogar video game</p>
                 <!--</div>
-                <div class="skills__box">
-                    <p class="skills__skill fa-brands fa-java"></p>
-                    <p class="skills__text">JAVA</p>
+                <div class="grid__box">
+                    <p class="grid__skill fa-brands fa-java"></p>
+                    <p class="grid__text">JAVA</p>
                 </div>
-                <div class="skills__box">
-                    <p class="skills__skill fa-brands fa-github"></p>
-                    <p class="skills__text">GITHUB</p>
+                <div class="grid__box">
+                    <p class="grid__skill fa-brands fa-github"></p>
+                    <p class="grid__text">GITHUB</p>
                 </div>-->
             </div>
 
         </section>
 
-        <section class="formation background">
+        <section class="formation background" id="formation">
             <h2 class="formation__title titles">Formação academica</h2> <!--mudar o nome dessa classe-->
             <div class="formation__formations">
                 <div>
@@ -146,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section class="works">
+        <section class="works" id="works">
             
             <h2 class="works__title titles">Trabalhos</h2>
             <p class="works__text">Decodificador de Texto</p>
@@ -155,13 +154,13 @@
             <button class="works__buttons">Repositório</button>
             <button class="works__buttons">Ver Demo</button>
         </section>
-        <section class="contactMe background">
+        <section class="contactMe background" id="contactMe">
             <form class="contactMe__form form__flex " action="" method="post">
                 <div class="">
                     <h2 class="titles">Contato</h2>
                     <p>Quer entrar em contato comigo?
-                        Preencha o formulário ao lado que entrarei em conratoo mais 
-                        Rápido possivel.
+                        Preencha o formulário que entrarei em contato mais 
+                        rápido possivel.
                     </p>
                 </div>
                 <div class="contactMe__fields">
