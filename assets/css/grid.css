@@ -4,24 +4,36 @@
     grid-template-columns: 50% 50%;
 }
 .grid__box{
-    background-color: #FFFFFF;
+    background-color: #ffffff	;
+    height: 125px;
+    width: 125px;
+    border-radius: 10px;
     margin-bottom: 32px;
 }
 .grid__box:nth-child(2n+1){
     margin-right: 16px;
 }
 .grid__skill{
-    margin: 120px 0 0 15px;
+    margin: 20% 33%;
+
+}
+.grid__skill:nth-child(2n+1){
+    margin: 20% 36% 15% 36%;
 
 }
 .grid__text{
-    margin: 8px 0 0 15px;
+    align-items: center;
+    text-align: center;
     font-weight: 700;
+    color: #ffffff;
+}
+.grid__text:nth-child(2n+1){
+    margin: 0 30% 0 24%;
+
 }
 
-.fa-brands{
-    font-size:36px;
-    color: #000000;
+.grid__centralize__icons{
+    margin : 1.6em;
 }
 
 @media screen and (min-width : 768px ){

@@ -1,5 +1,19 @@
 .menu__list{
     display: none;
+    color:white;
+}
+
+.menu__item a{
+    color: white;
+    font-weight: bold;
+}
+
+.menu__item a:hover{
+    background-color:white;
+    border-radius: 10px;
+    color: #1C1C1C;
+    padding: 5px;
+    
 }
 
 

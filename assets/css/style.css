@@ -1,7 +1,10 @@
 body{
     font-family: Raleway, sans-serif;
-    background-color: #e5e5e5;
-    
+    /*background-color: #e5e5e5;*/
+    background-color: #000000;
+}
+h2{
+    color: white;
 }
 
 section:nth-child(1n+2){

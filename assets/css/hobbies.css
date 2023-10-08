@@ -1,8 +1,10 @@
 .hobbies{
-    height: 480px;
+    height: 250px;
 }
-@media screen and (min-width: 768px){
-    .hobbies{
-        height: 300px;
-    }
+.hobbies__grid{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content:center;
+    justify-items: center;
 }

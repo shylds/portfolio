@@ -2,6 +2,7 @@
     text-align: center;
 }
 .works__text{
+    color: white;
     font-weight: 600;
     margin: 10px;
     text-align: center;
@@ -11,6 +12,7 @@
     width: 100%;
 }
 .works__subtitle{
+    color: white;
     width: 300px;
 }
 .works__buttons{
