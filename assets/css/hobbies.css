@@ -8,3 +8,14 @@
     justify-content:center;
     justify-items: center;
 }
+
+@media screen and (max-width : 768px) {
+    .hobbies{
+        height: 350px;
+        margin-bottom: 100px;
+    }
+    .hobbies__grid{
+        width: 100%;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
