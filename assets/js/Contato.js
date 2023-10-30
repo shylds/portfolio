@@ -1,8 +1,6 @@
 var meuObj;
 function contato(){
-    //const formEl = document.getElementById('contactMe__form');
     
-    //console.log(formEl);
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const assunto = document.getElementById("assunto").value;
@@ -10,23 +8,39 @@ function contato(){
 
     var valorTexto = '{"ownerRef":"' + name + '","emailFrom": "elison.s.ferreira@gmail.com","emailTo":"' + email + '","subject":"' + assunto + '","text":"' + texto + '"}'
     
-    var obj = JSON.parse(valorTexto);
-    
-    var testeJSON = JSON.stringify(obj);
-    //console.log(testeJSON);
-    //console.log(name, email, assunto, texto);
-    
+    // Dados a serem enviados no corpo da solicitação
+    const dadosParaEnvio = {
+    ownerRef: name,
+    emailFrom : "elison.s.ferreira@gmail.com",
+    emailTo: email,
+    subject: assunto,
+    text: texto
+    };
 
-    fetch("http://localhost:8080/sending-email", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: testeJSON,
-    })
-    .then((response) => response.json())
-    .then(data => console.log(data))
-    
+    // Configuração da solicitação
+const urlDaApi = 'http://localhost:8080/sending-email';
+
+fetch(urlDaApi, {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(dadosParaEnvio)
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Erro na solicitação: ' + response.status);
+    }
+    return response.json();
+})
+.then(data => {
+    // Processar a resposta da API
+    console.log('Resposta da API:', data);
+})
+.catch(error => {
+    console.error('Erro na solicitação:', error);
+});
+
     alert('Obrigado pelo seu contato' );
     
 }

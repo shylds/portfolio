@@ -16,17 +16,23 @@
     width: 300px;
 }
 .works__buttons{
-    background-color: #F5F5F5;
-    color: #2A7AE4;
-    border-color: #2A7AE4;
-    width: 130px;
+    background-color:  white;
+    border-color: white;
+    border-radius: 10px;
+    font-weight: bold;
     height: 40px;
+    margin-bottom: 32px;
     
 }
-.works__buttons:last-child{
-    background-color:  #2A7AE4;
-    color: #FFFFFF;
+.works__buttons:hover{
+    background-color:  black;
+    border-color: black;
+    color: white;
 }
+/*.works__buttons:last-child{
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}*/
 
 @media screen and ( min-width : 768px ) {
     .works__img{
@@ -34,7 +40,7 @@
     }
     .works__subtitle{
         font-size: 1.3rem;
-        weight: 500;
+        height: 500;
     }
     .works__buttons{
         width: 130px;

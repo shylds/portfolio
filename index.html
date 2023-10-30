@@ -36,7 +36,7 @@
         <nav class="menu">
             <ul id="lista__ul" class="menu__list">
                 <li class="menu__item"><a href="#aboutMe">Sobre mim</a></li>
-                <li class="menu__item"><a href="#skills">skills e Hobbies</a></li>
+                <li class="menu__item"><a href="#skills__container">skills e Hobbies</a></li>
                 <li class="menu__item"><a href="#formation">Formação</a> </li>
                 <li class="menu__item"><a href="#works">Projetos</a> </li>
                 <li class="menu__item"><a href="#contactMe">Contato</a></li>
@@ -51,11 +51,11 @@
                 <img class="aboutMe__image" src="./assets/img/perfil.png" alt="">
                 <div class="aboutMe__me">
                     <h1 class="aboutMe__title">Olá, Me chamo Elison Santos e Construo paginas na web</h1>
-                    <p class="aboutMe__subtitle">Eu sou formado em Análise e Desenvolvimento de Sistemas e atualmente estou participando no projeto Oracle ONE na Alura.</p>
+                    <p class="aboutMe__subtitle">Formado em Análise e Desenvolvimento de Sistemas e no projeto Oracle ONE na Alura.</p>
                     
                     <ul class="aboutMe__list">
                         <li class="aboutMe__list-item"><a href="https://www.linkedin.com/in/elison-santos-desenvolvedor/"><img src="./assets/img/linkedin.png"></a></li>
-                        <li class="aboutMe__list-item"><a href="https://www.instagram.com/shylds/"><img src="./assets/img/instagram.png"></a></li>
+                        <li class="aboutMe__list-item"><a href="https://www.instagram.com/oelisonsantos/"><img src="./assets/img/instagram.png"></a></li>
                         <li class="aboutMe__list-item"><a href="https://github.com/shylds"><img src="./assets/img/github1.png"></a></li>
                     </ul>
                 </div>
@@ -70,7 +70,7 @@
                     
             </div>
         </section>
-        <section class="skills__container">
+        <section class="skills__container" id="skills__container">
             <h2 class="skills__">Skills</h2>
            
             <div class="skills__grid">
@@ -140,8 +140,9 @@
             <p class="works__text">Decodificador de Texto</p>
             <img class="works__img" src="./assets/img/decodificador-desktop.png" alt="">
             <p class="works__subtitle">Challenge Alura Codificador </p>
-            <button class="works__buttons" >Repositório</button>
-            <button  class="works__buttons">Ver Demo</button>
+            <!--<a class="works__buttons" href="https://github.com/shylds/decodificador-challenge"></a>-->
+            <button class="works__buttons" type="button" onclick="" >Repositório</button>
+            <!--<button  class="works__buttons">Ver Demo</button>j-->
         </section>
         <section class="contactMe background" id="contactMe">
             <form class="contactMe__form form__flex " >
@@ -154,13 +155,11 @@
                 </div>
                 <form  id="contactMe__form" >
                     <input id="name" name="name" class="contactMe__input" type="text" placeholder="nome"  required>
-                    <label for=""></label>
+                    
 
                     <input id="email" class="contactMe__input" type="email" placeholder="Email"  required>
-                    <label for=""></label>
 
                     <input id="assunto" class="contactMe__input" type="text" placeholder="Assunto"  required>
-                    <label for=""></label>
 
                     <textarea id="texto" class="contactMe__text" name="" id="" cols="30" rows="10"  required></textarea>
 
